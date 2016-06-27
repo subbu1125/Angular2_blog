@@ -1,0 +1,30 @@
+<div class="container four wide column center aligned votes">
+    <div class="ui statistic">
+      <div class="value">
+        {{ article.votes }}
+      </div>
+      <div class="label">
+        Points
+      </div>
+    </div>
+</div>
+<div class="twelve wide column">
+  <a class="ui large header" href="{{link}}">
+    {{article.title}}
+  </a>
+  <a href="${article.link}">{{article.link}}</a>
+  <ul class="ui big horizantal list voters">
+    <li class="item">
+      <a href (click)="voteUp()">
+        <i class="arrow up icon"></i>
+        Upvote
+      </a>
+    </li>
+    <li class="item">
+      <a href (click)="voteDown()">
+        <i class="arrow down icon"></i>
+        downvote
+      </a>
+    </li>
+  </ul>
+</div>
